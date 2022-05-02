@@ -15,10 +15,6 @@
     color: white;
 }
 
-
-
-
-
 /* header */
 header {
     background-color: #ff6900 ;
@@ -47,8 +43,22 @@ header .container {
 .nav span {
     word-spacing: 10px;
 }
-/* main */
 
+/* main */
+main .container {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    border-radius: 15px;
+    margin-top: 45.5px;
+    width: calc(100% / 3.2);
+    height: 550px ;
+    background-color: lightgray;
+}
 
 
 
