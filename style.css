@@ -1,0 +1,55 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Common */
+.container {
+    width: 71%;
+    margin: 0 auto;
+}
+
+.white-text {
+    color: white;
+}
+
+
+
+
+
+/* header */
+header {
+    background-color: #ff6900 ;
+    height: 75px;
+}
+
+header img {
+    width: 150px;
+    height: 35px;
+}
+
+header .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav span {
+    word-spacing: 10px;
+}
+/* main */
+
+
+
+
+/* footer */
