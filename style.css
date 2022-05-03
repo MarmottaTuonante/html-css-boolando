@@ -12,6 +12,7 @@ main {
 }
 
 .container {
+    position: relative;
     width: 71%;
     margin: 0 auto;
 }
@@ -20,9 +21,18 @@ main {
     color: white;
 }
 
+.bg-red {
+    background-color: red;
+}
+
+.bg-green {
+    background-color: green;
+}
+
 /* header */
 header {
-    background-color: #ff6900 ;
+    z-index: 10;
+    background-color: #ff6900;
     height: 50px;
     position: fixed;
     top: 0;
@@ -51,6 +61,8 @@ header .container {
 
 .nav span {
     word-spacing: 10px;
+    padding-right: 12px;
+    padding-left: 12px;
 }
 
 /* main */
@@ -62,11 +74,63 @@ main .container {
 }
 
 .card {
+    /* z-index: 1; */
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
     border-radius: 15px;
     margin-top: 45.5px;
     width: calc(100% / 3.2);
-    height: 550px ;
-    background-color: lightgray;
+    height: 550px;
+    /* background-color: lightgray; */
+    transition: box-shadow .3s;
+}
+
+.labels {
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+   
+}
+
+.labels span {
+    border-radius: 3px;
+    padding: 3.3px;
+}
+
+/* .product-title {
+    display: flex;
+    flex-direction: row;
+    align-self: end;
+    position: absolute;
+    left: 7px;
+    bottom: 573px;
+    font-weight: bold;
+    font-size: large;
+} */
+
+.h-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    margin-top: 13.7px;
+    background-color: white;
+    width: 55px;
+    height: 55px;
+}
+
+.h-box .heart {
+    font-size: 22.7px;
+}
+
+.heart:hover {
+    cursor: pointer;
+    color: red;
+}
+
+.card:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.4); 
 }
 
 
