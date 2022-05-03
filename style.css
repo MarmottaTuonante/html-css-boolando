@@ -1,36 +1,66 @@
 /* Reset */
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  @media (max-width: 640px)
 
-/* Common */
+  {
 
-main {
+    body {font-size:1.3rem;}
+
+  }
+
+  @media (min-width: 641px)
+
+  {
+
+    body {font-size:1.2rem;}
+
+  }
+
+  @media (min-width:960px)
+
+  {
+
+    body {font-size:1.4rem;}
+
+  }
+
+  @media (min-width:1100px)
+
+  {
+
+    body {font-size:1.6rem;}
+    
+  }
+
+  /* Common */
+
+  main {
     margin-top: 45px;
-}
+  }
 
-.container {
+  .container {
     position: relative;
     width: 71%;
     margin: 0 auto;
-}
+  }
 
-.white-text {
+  .white-text {
     color: white;
-}
+  }
 
-.bg-red {
+  .bg-red {
     background-color: red;
-}
+  }
 
-.bg-green {
+  .bg-green {
     background-color: green;
-}
+  }
 
-/* header */
-header {
+  /* header */
+  header {
     z-index: 10;
     background-color: #ff6900;
     height: 50px;
@@ -38,42 +68,42 @@ header {
     top: 0;
     left: 0;
     right: 0;
-}
+  }
 
-header img {
+  header img {
     width: 150px;
     height: 35px;
-}
+  }
 
-header .container {
+  header .container {
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-}
+  }
 
-.nav {
+  .nav {
     display: flex;
     width: 100%;
     justify-content: space-between;
     align-items: center;
-}
+  }
 
-.nav span {
+  .nav span {
     word-spacing: 10px;
     padding-right: 12px;
     padding-left: 12px;
-}
+  }
 
-/* main */
-main .container {
+  /* main */
+  main .container {
     justify-content: space-between;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-}
+  }
 
-.card {
+  .card {
     /* z-index: 1; */
     position: relative;
     display: flex;
@@ -84,32 +114,32 @@ main .container {
     height: 550px;
     /* background-color: lightgray; */
     transition: box-shadow .3s;
-}
+  }
 
-.labels {
+  .labels {
     position: absolute;
     bottom: 25px;
     left: 0;
-   
-}
 
-.labels span {
+  }
+
+  .labels span {
     border-radius: 3px;
     padding: 3.3px;
-}
+  }
 
-/* .product-title {
-    display: flex;
-    flex-direction: row;
-    align-self: end;
-    position: absolute;
-    left: 7px;
-    bottom: 573px;
-    font-weight: bold;
-    font-size: large;
-} */
+  /* .product-title {
+  display: flex;
+  flex-direction: row;
+  align-self: end;
+  position: absolute;
+  left: 7px;
+  bottom: 573px;
+  font-weight: bold;
+  font-size: large;
+  } */
 
-.h-box {
+  .h-box {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -118,21 +148,21 @@ main .container {
     background-color: white;
     width: 55px;
     height: 55px;
-}
+  }
 
-.h-box .heart {
+  .h-box .heart {
     font-size: 22.7px;
-}
+  }
 
-.heart:hover {
+  .heart:hover {
     cursor: pointer;
     color: red;
-}
+  }
 
-.card:hover {
-    box-shadow: 0 0 11px rgba(33,33,33,.4); 
-}
+  .card:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.4);
+  }
 
 
 
-/* footer */
+  /* footer */
